@@ -1,0 +1,33 @@
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe.config
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.AssemblyReference.cache
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.FrmIngresarEquipo.resources
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Presentacion.FrmPrincipal.resources
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Properties.Resources.resources
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.GenerateResource.cache
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.CoreCompileInputs.cache
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe.config
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.AssemblyReference.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.FrmIngresarEquipo.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Presentacion.FrmPrincipal.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Properties.Resources.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.GenerateResource.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.CoreCompileInputs.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion 2\LigaCordobesa_405153\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe.config
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\bin\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.AssemblyReference.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.FrmIngresarEquipo.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Presentacion.FrmPrincipal.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Properties.Resources.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.GenerateResource.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.CoreCompileInputs.cache
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.exe
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.pdb

@@ -1,0 +1,53 @@
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csprojAssemblyReference.cache
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.frmPersona.resources
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.Properties.Resources.resources
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.GenerateResource.cache
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.CoreCompileInputs.cache
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe.config
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.pdb
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.exe
+D:\Oscar\UTN\ProgramacionI\2021\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.pdb
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.AssemblyReference.cache
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.frmPersona.resources
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.Properties.Resources.resources
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.GenerateResource.cache
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.CoreCompileInputs.cache
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.exe
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.pdb
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe.config
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe
+D:\Oscar\UTN\ProgramacionI\2022\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.pdb
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe.config
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.exe
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\bin\Debug\ABMPersonas.pdb
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.AssemblyReference.cache
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.SuggestedBindingRedirects.cache
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.frmPersona.resources
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.Properties.Resources.resources
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.GenerateResource.cache
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.csproj.CoreCompileInputs.cache
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.exe
+D:\UTN\ProgramacionI\2023\1Cuatrimestre\ABMPersonas\obj\Debug\ABMPersonas.pdb
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\bin\Debug\ABMPersonas.exe.config
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\bin\Debug\ABMPersonas.exe
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\bin\Debug\ABMPersonas.pdb
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.csproj.AssemblyReference.cache
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.csproj.SuggestedBindingRedirects.cache
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.frmPersona.resources
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.Properties.Resources.resources
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.csproj.GenerateResource.cache
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.csproj.CoreCompileInputs.cache
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.exe
+D:\cosas disco d\Varios\TUP\Cuatrimestre N1\Programacion\Programas\ABMPersonas\obj\Debug\ABMPersonas.pdb
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\bin\Debug\ABMPersonas.exe.config
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\bin\Debug\ABMPersonas.exe
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\bin\Debug\ABMPersonas.pdb
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.csproj.AssemblyReference.cache
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.csproj.SuggestedBindingRedirects.cache
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.frmPersona.resources
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.Properties.Resources.resources
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.csproj.GenerateResource.cache
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.csproj.CoreCompileInputs.cache
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.exe
+D:\UTN\TUP_PROGI\ABMPersonas\ABMPersonas\obj\Debug\ABMPersonas.pdb
