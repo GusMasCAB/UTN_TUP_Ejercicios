@@ -172,3 +172,26 @@ as
 begin
 	select id_persona,nombre+' '+apellido,dni,fecha_nac from personas
 end
+
+create procedure sp_ingresar_equipos
+		@nombre varchar(50),
+		@tecnico varchar(50),
+		@newId int output
+as
+begin
+	insert into equipos(nombre,tecnico)
+	values (@nombre,@tecnico)
+
+	set @newId = SCOPE_IDENTITY()
+end
+
+create procedure sp_ingresar_jugadores
+		@idEquipo int,
+		@idPersona int,
+		@idPosicion int,
+		@idCamisteta int
+as
+begin
+	insert into jugadores(id_equipo,id_persona,id_posicion,camiseta)
+	values (@idEquipo,@idPersona,@idPosicion,@idCamisteta)
+end

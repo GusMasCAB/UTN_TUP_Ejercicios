@@ -18,20 +18,22 @@ namespace LigaCordobesaApp
         Equipo equipo;
         private PersonaServicio personaServicio;
         private PosicionServicio posicionServicio;
+        private EquipoServicio equipoServicio;
         public FrmIngresarEquipo()
         {
             InitializeComponent();
             equipo = new Equipo();
             personaServicio = new PersonaServicio();
             posicionServicio = new PosicionServicio();
+            equipoServicio = new EquipoServicio();
         }
 
         private void FrmIngresarEquipo_Load(object sender, EventArgs e)
         {
             try
             {
-                CargarCombos(cboPersonas, personaServicio,true);
-                CargarCombos(cboPosiciones, posicionServicio,false);
+                CargarCombos(cboPersonas, personaServicio);
+                CargarCombos(cboPosiciones, posicionServicio);
             }
             catch (SqlException ex)
             {
@@ -45,7 +47,7 @@ namespace LigaCordobesaApp
             }
         }
 
-        private void CargarCombos(ComboBox cbo,IServicio servicio,bool columnaExtra)
+        private void CargarCombos(ComboBox cbo,IServicio servicio)
         {
             DataTable tabla = new DataTable();
             tabla = servicio.ConsultarBD();
@@ -96,6 +98,7 @@ namespace LigaCordobesaApp
                 ValidacionEquipo(txtTecnico, "director técnico");
                 equipo.Tecnico = txtTecnico.Text;
                 equipo.Nombre = txtNombreEquipo.Text;
+                equipoServicio.Grabar(equipo);
             }
             catch (Exception ex)
             {

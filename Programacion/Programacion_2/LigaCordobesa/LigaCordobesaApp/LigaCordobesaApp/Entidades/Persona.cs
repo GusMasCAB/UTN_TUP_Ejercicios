@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LigaCordobesaApp.Entidades
 {
-    internal class Persona
+    public class Persona
     {
         public int Id { get; set; }
         public string NombreCompleto { get; set; }

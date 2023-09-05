@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace LigaCordobesaApp.Servicios
 {
-    internal interface IServicio
+    public interface IServicio
     {
         DataTable ConsultarBD();
+        
     }
 }

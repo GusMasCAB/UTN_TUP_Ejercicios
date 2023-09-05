@@ -2,25 +2,22 @@
 using LigaCordobesaApp.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace LigaCordobesaApp.Servicios
 {
-    public class PersonaServicio : IServicio
+    public class EquipoServicio
     {
         private AccesoDatos oBD;
-        public PersonaServicio() { 
+        public EquipoServicio(){
             oBD = new AccesoDatos();
         }
 
-        public DataTable ConsultarBD()
+        public void Grabar(Equipo equipo)
         {
-            return oBD.ConsultarBD("sp_consultar_personas");
+            oBD.GrabarBD(equipo,"sp_insertar_equipos");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LigaCordobesaApp.Entidades
 {
-    internal class Posicion
+    public class Posicion
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
