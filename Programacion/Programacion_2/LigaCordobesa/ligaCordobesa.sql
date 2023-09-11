@@ -161,14 +161,97 @@ INSERT INTO posiciones (posicion)
 VALUES ('Delantero');
 
 /*PROCEDIMIENTOS ALMACENADOS*/
+/*CONSULTAR POSICIONES*/
 create procedure sp_consultar_posiciones
 as
 begin
 	select * from posiciones
 end
 
+/*CONSULTAR PERSONAS*/
 create procedure sp_consultar_personas
 as
 begin
 	select id_persona,nombre+' '+apellido,dni,fecha_nac from personas
+end
+
+/*INGRESAR EQUIPOS*/
+create procedure sp_ingresar_equipos
+		@nombre varchar(50),
+		@tecnico varchar(50),
+		@newId int output
+as
+begin
+	insert into equipos(nombre,tecnico)
+	values (@nombre,@tecnico)
+
+	set @newId = SCOPE_IDENTITY()
+end
+
+/*INGRESAR JUGADORES*/
+create procedure sp_ingresar_jugadores
+		@idEquipo int,
+		@idPersona int,
+		@idPosicion int,
+		@Camiseta int
+as
+begin
+	insert into jugadores(id_equipo,id_persona,id_posicion,camiseta)
+	values (@idEquipo,@idPersona,@idPosicion,@Camiseta)
+end
+
+/*PROXIMO ID*/
+CREATE PROCEDURE sp_proximo_id
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT COALESCE(MAX(id_equipo), 0) + 1 FROM equipos);
+END
+
+/*CONSULTAR EQUIPOS*/
+CREATE PROCEDURE sp_consultar_equipos
+	@nombre varchar(50) = NULL,
+	@tecnico varchar(50) = NULL
+AS
+BEGIN
+	SELECT * 
+	FROM equipos
+	WHERE (@nombre IS NULL OR nombre LIKE '%' + @nombre + '%')
+	   or (@tecnico IS NULL OR tecnico LIKE '%' + @tecnico + '%')
+END
+
+/*MODIFICAR EQUIPOS*/
+CREATE PROCEDURE sp_modificar_equipo
+	@equipo_id INT,
+	@nuevo_nombre VARCHAR(50) = NULL,
+	@nuevo_tecnico VARCHAR(50) = NULL
+AS
+BEGIN
+	UPDATE equipos
+	SET
+		nombre = ISNULL(@nuevo_nombre, nombre), -- Actualiza nombre si se proporciona, de lo contrario, mantén el valor existente
+		tecnico = ISNULL(@nuevo_tecnico, tecnico) -- Actualiza técnico si se proporciona, de lo contrario, mantén el valor existente
+	WHERE id_equipo = @equipo_id;
+END
+
+/*CONSULTAR JUGADORES*/
+create procedure sp_consultar_jugadores
+		@id_equipo int,
+		@nombreCompleto varchar(100) = NULL,
+		@edad_desde int = NULL,
+		@edad_hasta int = NULL,
+		@edad int = NULL
+as
+begin
+	select id_jugador, apellido+' '+nombre Nombre_Completo,
+	DATEDIFF(YEAR, fecha_nac, GETDATE()) edad,
+	posicion
+	from jugadores j
+	join personas p on j.id_persona=p.id_persona
+	join posiciones po on po.id_posicion=j.id_posicion
+	where id_equipo = @id_equipo
+	and ((@nombreCompleto is null or apellido+' '+nombre like '%' +@nombreCompleto+ '%')
+	and (@edad_desde is null OR DATEDIFF(YEAR, fecha_nac, GETDATE()) >= @edad_desde)
+	and (@edad_hasta is null OR DATEDIFF(YEAR, fecha_nac, GETDATE()) <= @edad_hasta))
+	and (@edad is null or DATEDIFF(YEAR, fecha_nac, GETDATE()) = @edad)
 end

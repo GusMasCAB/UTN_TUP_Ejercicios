@@ -17,7 +17,7 @@ namespace LigaCordobesaApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmIngresarEquipo());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

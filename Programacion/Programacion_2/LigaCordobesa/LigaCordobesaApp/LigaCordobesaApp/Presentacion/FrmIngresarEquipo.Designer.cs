@@ -129,6 +129,7 @@
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAgregar
             // 
@@ -150,11 +151,12 @@
             // lblEquipo
             // 
             this.lblEquipo.AutoSize = true;
-            this.lblEquipo.Location = new System.Drawing.Point(26, 27);
+            this.lblEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquipo.Location = new System.Drawing.Point(24, 22);
             this.lblEquipo.Name = "lblEquipo";
-            this.lblEquipo.Size = new System.Drawing.Size(29, 13);
+            this.lblEquipo.Size = new System.Drawing.Size(98, 25);
             this.lblEquipo.TabIndex = 6;
-            this.lblEquipo.Text = "label";
+            this.lblEquipo.Text = "Equipo Nr";
             // 
             // cboPosiciones
             // 

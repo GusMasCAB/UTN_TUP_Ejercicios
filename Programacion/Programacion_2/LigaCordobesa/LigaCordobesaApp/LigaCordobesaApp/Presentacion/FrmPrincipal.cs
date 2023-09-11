@@ -22,5 +22,10 @@ namespace LigaCordobesaApp.Presentacion
             FrmIngresarEquipo frmIngresarEquipo = new FrmIngresarEquipo();
             frmIngresarEquipo.ShowDialog();
         }
+
+        private void consultarEquiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmConsultarEquipo().ShowDialog();
+        }
     }
 }

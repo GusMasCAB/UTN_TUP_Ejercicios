@@ -31,3 +31,5 @@ C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\Li
 C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.csproj.CoreCompileInputs.cache
 C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.exe
 C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.pdb
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Presentacion.FrmConsultarEquipo.resources
+C:\Users\ronim\OneDrive\Escritorio\Ejercicios UTN\Programacion\Programacion_2\LigaCordobesa\LigaCordobesaApp\LigaCordobesaApp\obj\Debug\LigaCordobesaApp.Presentacion.FrmJugadores.resources

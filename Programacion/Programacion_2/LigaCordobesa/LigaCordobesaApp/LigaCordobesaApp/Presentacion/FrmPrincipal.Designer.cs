@@ -62,7 +62,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // soporteToolStripMenuItem
@@ -76,7 +76,7 @@
             // jugadoresToolStripMenuItem
             // 
             this.jugadoresToolStripMenuItem.Name = "jugadoresToolStripMenuItem";
-            this.jugadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jugadoresToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.jugadoresToolStripMenuItem.Text = "Jugadores";
             // 
             // equiposToolStripMenuItem
@@ -93,6 +93,7 @@
             this.consultarEquiposToolStripMenuItem.Name = "consultarEquiposToolStripMenuItem";
             this.consultarEquiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarEquiposToolStripMenuItem.Text = "Consultar Equipos";
+            this.consultarEquiposToolStripMenuItem.Click += new System.EventHandler(this.consultarEquiposToolStripMenuItem_Click);
             // 
             // ingresarEquipoToolStripMenuItem
             // 

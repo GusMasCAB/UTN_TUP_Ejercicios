@@ -1,5 +1,5 @@
-﻿using LigaCordobesaApp.Entidades;
-using LigaCordobesaApp.Servicios;
+﻿using LigaCordobesaApp.Datos;
+using LigaCordobesaApp.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,25 +15,22 @@ namespace LigaCordobesaApp
 {
     public partial class FrmIngresarEquipo : Form
     {
-        Equipo equipo;
-        private PersonaServicio personaServicio;
-        private PosicionServicio posicionServicio;
-        private EquipoServicio equipoServicio;
+        Equipo equipo=null;
+        DBHelper gestor = null;
         public FrmIngresarEquipo()
         {
             InitializeComponent();
             equipo = new Equipo();
-            personaServicio = new PersonaServicio();
-            posicionServicio = new PosicionServicio();
-            equipoServicio = new EquipoServicio();
+            gestor = new DBHelper();
         }
 
         private void FrmIngresarEquipo_Load(object sender, EventArgs e)
         {
             try
             {
-                CargarCombos(cboPersonas, personaServicio);
-                CargarCombos(cboPosiciones, posicionServicio);
+                CargarCombos(cboPersonas,"sp_consultar_personas");
+                CargarCombos(cboPosiciones,"sp_consultar_posiciones");
+                lblEquipo.Text = lblEquipo.Text + " " + gestor.NuevoEquipo("sp_proximo_id").ToString();
             }
             catch (SqlException ex)
             {
@@ -47,11 +44,9 @@ namespace LigaCordobesaApp
             }
         }
 
-        private void CargarCombos(ComboBox cbo,IServicio servicio)
+        private void CargarCombos(ComboBox cbo,string sql)
         {
-            DataTable tabla = new DataTable();
-            tabla = servicio.ConsultarBD();
-
+            DataTable tabla = gestor.ConsultarBD(sql);
             cbo.DataSource = tabla;
             cbo.ValueMember = tabla.Columns[0].ColumnName;
             cbo.DisplayMember = tabla.Columns[1].ColumnName;
@@ -98,12 +93,23 @@ namespace LigaCordobesaApp
                 ValidacionEquipo(txtTecnico, "director técnico");
                 equipo.Tecnico = txtTecnico.Text;
                 equipo.Nombre = txtNombreEquipo.Text;
-                equipoServicio.Grabar(equipo);
+                if (gestor.GrabarEquipo(equipo))
+                {
+                    MessageBox.Show($"Se ingreso el equipo con exito", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else {
+                    throw new Exception("No se pudo ingresar el equipo ocurrió un error");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
 
         private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)

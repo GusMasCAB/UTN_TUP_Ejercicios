@@ -17,7 +17,11 @@ namespace LigaCordobesaApp.Servicios
 
         public void Grabar(Equipo equipo)
         {
-            oBD.GrabarBD(equipo,"sp_insertar_equipos");
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@nombre", equipo.Nombre));
+            lst.Add(new Parametro("@tecnico", equipo.Tecnico));
+
+            oBD.GrabarBD(lst,"sp_insertar_equipos");
         }
     }
 }
