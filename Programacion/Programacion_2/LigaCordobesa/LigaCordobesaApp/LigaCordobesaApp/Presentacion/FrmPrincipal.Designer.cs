@@ -36,6 +36,9 @@
             this.equiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarEquiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarEquipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cantJugadoresPorPosicionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +47,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.soporteToolStripMenuItem,
-            this.equiposToolStripMenuItem});
+            this.equiposToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -91,16 +95,39 @@
             // consultarEquiposToolStripMenuItem
             // 
             this.consultarEquiposToolStripMenuItem.Name = "consultarEquiposToolStripMenuItem";
-            this.consultarEquiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarEquiposToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.consultarEquiposToolStripMenuItem.Text = "Consultar Equipos";
             this.consultarEquiposToolStripMenuItem.Click += new System.EventHandler(this.consultarEquiposToolStripMenuItem_Click);
             // 
             // ingresarEquipoToolStripMenuItem
             // 
             this.ingresarEquipoToolStripMenuItem.Name = "ingresarEquipoToolStripMenuItem";
-            this.ingresarEquipoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ingresarEquipoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.ingresarEquipoToolStripMenuItem.Text = "Ingresar Equipo";
             this.ingresarEquipoToolStripMenuItem.Click += new System.EventHandler(this.ingresarEquipoToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personasToolStripMenuItem1,
+            this.cantJugadoresPorPosicionToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // personasToolStripMenuItem1
+            // 
+            this.personasToolStripMenuItem1.Name = "personasToolStripMenuItem1";
+            this.personasToolStripMenuItem1.Size = new System.Drawing.Size(227, 22);
+            this.personasToolStripMenuItem1.Text = "Personas";
+            this.personasToolStripMenuItem1.Click += new System.EventHandler(this.personasToolStripMenuItem1_Click);
+            // 
+            // cantJugadoresPorPosicionToolStripMenuItem
+            // 
+            this.cantJugadoresPorPosicionToolStripMenuItem.Name = "cantJugadoresPorPosicionToolStripMenuItem";
+            this.cantJugadoresPorPosicionToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.cantJugadoresPorPosicionToolStripMenuItem.Text = "Cant. Jugadores por posicion";
+            this.cantJugadoresPorPosicionToolStripMenuItem.Click += new System.EventHandler(this.cantJugadoresPorPosicionToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -128,5 +155,8 @@
         private System.Windows.Forms.ToolStripMenuItem equiposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarEquiposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarEquipoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cantJugadoresPorPosicionToolStripMenuItem;
     }
 }

@@ -147,6 +147,19 @@ VALUES ('López', 'Leonel', '119120121', '1998-04-21');
 INSERT INTO personas (apellido, nombre, dni, fecha_nac)
 VALUES ('Fernández', 'Manuel', '122123124', '1999-03-16');
 
+INSERT INTO personas (apellido, nombre, dni, fecha_nac)
+VALUES
+    ('González', 'Juan', '12345678', '1990-05-15'),
+    ('López', 'Carlos', '23456789', '1991-03-22'),
+    ('Martínez', 'Pedro', '34567890', '1988-07-10'),
+    ('Rodríguez', 'Luis', '45678901', '1995-11-01'),
+    ('Fernández', 'Javier', '56789012', '1993-04-20'),
+    ('Díaz', 'Andrés', '67890123', '1996-06-10'),
+    ('Sánchez', 'Alejandro', '78901234', '1992-08-03'),
+    ('Ramírez', 'Martín', '89012345', '1997-12-18'),
+    ('Torres', 'Diego', '90123456', '1994-09-25'),
+    ('Gómez', 'Lucas', '01234567', '1998-03-15');
+
 -- Insertar posiciones 
 INSERT INTO posiciones (posicion)
 VALUES ('Portero');
@@ -160,6 +173,29 @@ VALUES ('Centrocampista');
 INSERT INTO posiciones (posicion)
 VALUES ('Delantero');
 
+INSERT INTO equipos (nombre, tecnico)
+VALUES
+    ('Atlético Cordobés', 'Jorge Sánchez'),
+    ('Deportivo Bellavista', 'Martín González'),
+    ('Club San Martín', 'Jorge Pérez'),
+    ('Real Los Pinos', 'Carlos Rodríguez'),
+    ('Club Atlético Río Grande', 'Lionel Martínez'),
+    ('Deportivo Alameda', 'Diego López'),
+    ('Sporting del Norte', 'Pedro Fernández'),
+    ('Club Estrellas del Sur', 'Eduardo Ramírez'),
+    ('Villa del Sol FC', 'Milei García'),
+    ('Atlético Los Laureles', 'Alejandro Torres'),
+    ('Unidos de Córdoba', 'Roque Díaz'),
+    ('Deportivo Las Palmas', 'Javier Vargas'),
+    ('Club Aurora', 'San Ruiz'),
+    ('Sporting de la Montaña', 'Andrés Herrera'),
+    ('Club Deportivo Cordillera', 'Pujato Castro'),
+    ('Real Vallarta', 'Ricardo Morales'),
+    ('Club Río Celeste', 'Victor López'),
+    ('Deportivo Los Tilos', 'Manuel Silva'),
+    ('Unión Juventud', 'Indio Ramírez'),
+    ('Club Atlético Los Pájaros', 'Juan González')
+
 /*PROCEDIMIENTOS ALMACENADOS*/
 create procedure sp_consultar_posiciones
 as
@@ -170,7 +206,7 @@ end
 create procedure sp_consultar_personas
 as
 begin
-	select id_persona,nombre+' '+apellido,dni,fecha_nac from personas
+	select id_persona,nombre+' '+apellido Nombre_Completo,dni,fecha_nac from personas
 end
 
 create procedure sp_ingresar_equipos

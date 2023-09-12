@@ -27,5 +27,15 @@ namespace LigaCordobesaApp.Presentacion
         {
             new FrmConsultarEquipo().ShowDialog();
         }
+
+        private void personasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FrmReportePersonas().ShowDialog();
+        }
+
+        private void cantJugadoresPorPosicionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmJugadoresPorPosicion().ShowDialog();
+        }
     }
 }

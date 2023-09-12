@@ -25,7 +25,7 @@ namespace LigaCordobesaApp.Presentacion
             try
             {
                 List<Parametro> lst = new List<Parametro>();
-                lst.Add(new Parametro("@nombre", txtNombre.Text));
+                lst.Add(new Parametro("@nombre", Convert.ToInt32(txtNombre.Text)));
                 lst.Add(new Parametro("@tecnico", txtTecnico.Text));
 
                 DataTable tabla = new DataTable();
@@ -60,5 +60,6 @@ namespace LigaCordobesaApp.Presentacion
         {
             this.Dispose();
         }
+
     }
 }
