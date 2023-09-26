@@ -22,7 +22,7 @@ namespace LigaCordobesaApp.Entidades
 
         public override string ToString()
         {
-            return persona.ToString()+$"\nCamiseta: {Camiseta} \n{posicion.ToString()}";
+            return persona.ToString()+$"\nCamiseta: {Camiseta} \n{posicion}";
         }
     }
 }

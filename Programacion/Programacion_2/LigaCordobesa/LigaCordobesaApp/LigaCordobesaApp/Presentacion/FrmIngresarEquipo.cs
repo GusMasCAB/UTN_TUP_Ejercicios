@@ -1,5 +1,8 @@
 ﻿using LigaCordobesaApp.Datos;
+using LigaCordobesaApp.Datos.Interfaz;
 using LigaCordobesaApp.Entidades;
+using LigaCordobesaApp.Servicios;
+using LigaCordobesaApp.Servicios.Implementacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,21 +19,21 @@ namespace LigaCordobesaApp
     public partial class FrmIngresarEquipo : Form
     {
         Equipo equipo=null;
-        DBHelper gestor = null;
+        IServicioEquipo servicioEquipo;
         public FrmIngresarEquipo()
         {
             InitializeComponent();
             equipo = new Equipo();
-            gestor = new DBHelper();
+            servicioEquipo = new ServicioEquipo();
         }
 
         private void FrmIngresarEquipo_Load(object sender, EventArgs e)
         {
             try
             {
-                CargarCombos(cboPersonas,"sp_consultar_personas");
-                CargarCombos(cboPosiciones,"sp_consultar_posiciones");
-                lblEquipo.Text = lblEquipo.Text + " " + gestor.NuevoEquipo("sp_proximo_id").ToString();
+                lblEquipo.Text = lblEquipo.Text + " " + servicioEquipo.ProximoIdEquipo();
+                CargarCombos(cboPersonas);
+                CargarCombos(cboPosiciones);
             }
             catch (SqlException ex)
             {
@@ -44,10 +47,10 @@ namespace LigaCordobesaApp
             }
         }
 
-        private void CargarCombos(ComboBox cbo,string sql)
+        private void CargarCombos(ComboBox cbo)
         {
-            DataTable tabla = gestor.ConsultarBD(sql);
-            cbo.DataSource = tabla;
+            List<Persona> lstPersonas = servicioEquipo.TraerPersonas();
+            cbo.DataSource = lstPersonas;
             cbo.ValueMember = tabla.Columns[0].ColumnName;
             cbo.DisplayMember = tabla.Columns[1].ColumnName;
         }
