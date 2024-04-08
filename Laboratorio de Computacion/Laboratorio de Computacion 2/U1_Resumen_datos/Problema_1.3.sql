@@ -26,7 +26,7 @@ having sum(pre_unitario*cantidad) between 3000 and 8000
 
 --5. Muestre la cantidad facturas diarias por vendedor; para los casos en que 
 --esa cantidad sea 2 o más.
-select cod_vendedor, fecha, count(*) 'Cantidad facuras diarias'
+select cod_vendedor, fecha, count(nro_factura) 'Cantidad facuras diarias'
 from facturas
 group by fecha, cod_vendedor
 having count(nro_factura)>=2

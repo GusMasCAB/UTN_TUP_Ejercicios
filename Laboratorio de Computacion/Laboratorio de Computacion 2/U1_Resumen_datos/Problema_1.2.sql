@@ -16,6 +16,7 @@ SELECT fecha, sum(pre_unitario*cantidad) 'Facturacion por dia'
 FROM facturas f
 JOIN detalle_facturas d ON d.nro_factura = f.nro_factura
 GROUP BY fecha
+order by 1
 
 --b. Mensualmente 
 SELECT month(fecha) Mes, year(fecha) Año, sum(pre_unitario*cantidad) 'Facturacion por mes'
@@ -38,13 +39,13 @@ select fecha, count(*) 'Cantidad facturas'
 from facturas
 where month(fecha) not in(1,7,12)
 group by fecha
-order by 2 desc
+order by 2 desc, fecha
 
 --5. Se quiere saber la cantidad y el importe promedio vendido por fecha y 
 --cliente, para códigos de vendedor superiores a 2. Ordene por fecha y 
 --cliente.
 select sum(cantidad) 'Unidades vendidas',
-	   sum(pre_unitario*cantidad)/count(distinct d.nro_factura) 'Promedio importe total', fecha,
+	   avg(pre_unitario*cantidad) 'Promedio importe total', fecha,
 	   nom_cliente+' '+ ape_cliente 'Cliente'
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura
@@ -58,7 +59,7 @@ order by fecha, 'Cliente'
 --fecha y artículo, para códigos de cliente inferior a 3. Ordene por fecha y 
 --artículo.
 select sum(cantidad) 'Unidades vendidas',
-	   sum(d.pre_unitario*cantidad)/count(distinct d.nro_factura) 'Promedio vendido', fecha,
+	   avg(d.pre_unitario*cantidad), fecha,
 	   descripcion
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura
@@ -72,10 +73,10 @@ order by fecha, descripcion
 --promedio total vendido por número de factura, siempre que la fecha no 
 --oscile entre el 13/2/2007 y el 13/7/2010.
 select d.nro_factura, sum(cantidad) 'Cantidad total vendida',sum(d.pre_unitario*cantidad) 'Importe total',
-	   sum(d.pre_unitario*cantidad)/count(distinct d.nro_factura) 'Promedio vendido'
+	   avg(pre_unitario*cantidad) 'Promedio vendido'
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura
-where fecha between '13/2/2007' and '13/7/2010'
+where fecha not between '13/2/2007' and '13/7/2010'
 group by d.nro_factura
 
 --8. Emitir un reporte que muestre la fecha de la primer y última venta y el 
@@ -113,3 +114,16 @@ join clientes c on c.cod_cliente=f.cod_cliente
 where nro_factura between 5 and 30
 group by v.cod_vendedor, nom_vendedor+' '+ape_vendedor, c.cod_cliente, nom_cliente
 order by Vendedor desc, 'Cantidad facturas' desc, Cliente
+
+SELECT v.ape_vendedor + ' ' + v.nom_vendedor 'Vendedor',
+c.ape_cliente + ' ' + c.nom_cliente 'Cliente',
+COUNT(f.nro_factura) 'Cantidad de Facturas',
+MIN(f.fecha) 'Primer Factura',
+MAx(f.fecha) 'Ultima Factura'
+FROM vendedores v
+JOIN facturas f ON f.cod_vendedor = v.cod_vendedor
+JOIN clientes c ON f.cod_cliente = c.cod_cliente
+WHERE f.nro_factura BETWEEN 5 AND 30
+GROUP BY v.cod_vendedor,v.ape_vendedor + ' ' + v.nom_vendedor,
+c.cod_cliente, c.ape_cliente + ' ' + c.nom_cliente
+ORDER BY 1,3 DESC,2

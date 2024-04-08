@@ -4,6 +4,9 @@ select 'Vendedor cod 3' Vendedor,count(*) 'Cantidad de ventas'
 from facturas
 where cod_vendedor=3
 
+SELECT count(*) 'Cant. de Ventas'
+FROM facturas
+WHERE cod_vendedor = 3
 --8. ¿Cuál fue la fecha de la primera y última venta que se realizó en este 
 --negocio?
 select min(fecha) '1ra Venta', max(fecha) 'Ultima Venta'
@@ -29,6 +32,15 @@ join facturas f on f.nro_factura=d.nro_factura
 join vendedores v on v.cod_vendedor=f.cod_vendedor
 where nom_vendedor like '[d-l]%'
 
+SELECT SUM(cantidad) 'Total Unidades Vendidas',
+ SUM(pre_unitario*cantidad) 'Importe Total',
+ SUM(pre_unitario*cantidad)/COUNT(distinct f.nro_factura)
+ AS 'Importe Promedio'
+From vendedores V
+ JOIN facturas F ON V.cod_vendedor = F.cod_vendedor
+ JOIN detalle_facturas DF ON DF.nro_factura = F.nro_factura
+WHERE nom_vendedor LIKE '[D-I]%'
+
 --11.Se quiere saber el importe total vendido, el promedio del importe vendido y 
 --la cantidad total de artículos vendidos para el cliente Roque Paez.
 select sum(pre_unitario*cantidad) 'Importe total',
@@ -47,12 +59,11 @@ sum(d.pre_unitario*cantidad) 'Importe total'
 from detalle_facturas d
 join articulos a on a.cod_articulo=d.cod_articulo
 join facturas f on f.nro_factura=d.nro_factura
-where a.descripcion like 'c%'
+where descripcion like 'c%'
 
 --13.Se quiere saber la cantidad total de artículos vendidos y el importe total 
 --vendido para el periodo del 15/06/2011 al 15/06/2017.
-select count(distinct cod_articulo) 'Articulos vendidos',
-sum(cantidad) 'Unidades vendidas', sum(pre_unitario*cantidad) 'Importe total' 
+select sum(cantidad) 'Cantidad Total', sum(pre_unitario*cantidad) 'Importe total' 
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura 
 where fecha between '15/06/2011' and '15/06/2017'
@@ -66,10 +77,18 @@ join facturas f on f.nro_factura=d.nro_factura
 join clientes c on c.cod_cliente=f.cod_cliente
 where ape_cliente='abarca'
 
+Select count(distinct f.nro_factura) 'Cant. de veces',
+max(f.fecha) 'Ultima Fecha',
+sum(d.cantidad*d.pre_unitario) 'Total Gastado'
+from facturas f
+join clientes c on f.cod_cliente = c.cod_cliente
+join detalle_facturas d on f.nro_factura = d.nro_factura
+where ape_cliente like '%Abarca%'
+
 --15.Mostrar el importe total y el promedio del importe para los clientes cuya 
 --dirección de mail es conocida.
 select sum(pre_unitario*cantidad) 'Importe total',
-sum(pre_unitario*cantidad)/count(distinct d.nro_factura) 'Promedio importe total'
+avg(pre_unitario*cantidad) 'Promedio importe total'
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura
 join clientes c on c.cod_cliente=f.cod_cliente
@@ -79,7 +98,7 @@ where  c.[e-mail] is not null
 --promedio vendido para números de factura que no sean los siguientes: 13, 
 --5, 17, 33, 24
 select sum(pre_unitario*cantidad) 'Importe total',
-sum(pre_unitario*cantidad)/count(distinct d.nro_factura) 'Importe promedio'
+avg(pre_unitario*cantidad) 'Importe promedio'
 from detalle_facturas d
 join facturas f on f.nro_factura=d.nro_factura
 where d.nro_factura not in (13,5,17,33,24)

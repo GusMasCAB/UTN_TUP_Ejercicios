@@ -19,13 +19,13 @@ namespace LigaCordobesaApp.Datos.Implementacion
             foreach (DataRow fila in Tabla.Rows)
             {
                 Persona p = new Persona();
-                if(fila.IsNull(0))
+                if(!fila.IsNull(0))
                     p.Id = Convert.ToInt32(fila[0]);
-                if (fila.IsNull(1))
+                if (!fila.IsNull(1))
                     p.NombreCompleto = fila[1].ToString();
-                if (fila.IsNull(2))
+                if (!fila.IsNull(2))
                     p.DNI = fila[2].ToString();
-                if (fila.IsNull(3))
+                if (!fila.IsNull(3))
                     p.FechaNac = Convert.ToDateTime(fila[3]);
                 lstPersonas.Add(p);
             }
